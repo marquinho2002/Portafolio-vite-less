@@ -28,6 +28,8 @@ jobs:
           cache: 'npm'
       - name: Install Dependencies
         run: npm install
+      - name: Grant execution permissions
+        run: chmod +x node_modules/.bin/vite
       - name: Build
         run: npm run build
       - name: Setup de Github Pages
