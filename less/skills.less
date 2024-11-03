@@ -1,0 +1,95 @@
+.skills {
+    background-color: #252A2E;
+    color: @text-light;
+    padding: 50px 20px;
+
+    .contenido-seccion {
+        max-width: 1100px;
+        margin: auto;
+
+        h2 {
+            font-size: 48px;
+            font-family: @font-heading;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .fila {
+            display: flex;
+
+            .col {
+                width: 50%;
+                padding: 0 20px;
+
+                h3 {
+                    font-size: 28px;
+                    font-family: @font-heading;
+                    margin-bottom: 25px;
+                }
+
+                .skill {
+                    >span {
+                        font-weight: bold;
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+
+                    .barra-skill {
+                        height: 8px;
+                        width: 80%;
+                        background-color: #131517;
+                        position: relative;
+                        margin-bottom: 30px;
+
+                        .progreso {
+                            background-color: @primary-color;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 8px;
+
+                            span {
+                                position: absolute;
+                                height: 40px;
+                                width: 40px;
+                                background-color: @primary-color;
+                                border-radius: 50px;
+                                line-height: 40px;
+                                text-align: center;
+                                top: -17px;
+                                right: -15px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.barra-skill {
+    .progreso {
+        width: 0; 
+        transition: width 2s ease; 
+
+        &.javascript {
+            width: 75%;
+        }
+        &.htmlcss {
+            width: 89%;
+        }
+        &.photoshop {
+            width: 95%;
+        }
+        &.comunicacion {
+            width: 80%;
+        }
+        &.trabajo {
+            width: 70%;
+        }
+        &.creatividad {
+            width: 99%;
+        }
+    }
+}

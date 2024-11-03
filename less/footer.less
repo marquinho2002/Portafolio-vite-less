@@ -1,0 +1,45 @@
+footer {
+    background-color: #252A2E;
+    color: @text-light;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+
+    .redes {
+        margin-bottom: 20px;
+
+        a {
+            color: @text-light;
+            display: inline-block;
+            text-decoration: none;
+            border: 1px solid @text-light;
+            border-radius: 100%;
+            width: 42px;
+            height: 42px;
+            line-height: 42px;
+            margin: 40px 5px;
+            font-size: 20px;
+            transition: .3s;
+
+            &:hover {
+                background-color: @primary-color;
+            }
+        }
+    }
+
+    .arriba {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: @primary-color;
+        color: @text-light;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25px;
+        border-radius: 50%;
+        line-height: 50px;
+        font-size: 18px;
+    }
+}

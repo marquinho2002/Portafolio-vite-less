@@ -1,0 +1,96 @@
+.contacto {
+    background-image: url(../img/contact_bg.png);
+    background-color: @background-dark;
+    color: @text-light;
+    padding: 50px 0;
+
+    .contenido-seccion {
+        max-width: 1100px;
+        margin: auto;
+
+        h2 {
+            font-size: 48px;
+            font-family: @font-heading;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .fila {
+            display: flex;
+
+            .col {
+                width: 50%;
+                padding: 10px;
+                position: relative;
+
+                input, textarea {
+                    display: block;
+                    width: 100%;
+                    padding: 18px;
+                    border: none;
+                    margin-bottom: 20px;
+                    background-color: #252A2E;
+                    color: @text-light;
+                    font-size: 18px;
+                }
+
+                button {
+                    cursor: pointer;
+                    background-color: transparent;
+                    border: 2px solid @text-light;
+                    width: fit-content;
+                    display: block;
+                    margin: 20px auto;
+                    padding: 10px 22px;
+                    font-size: 16px;
+                    color: @text-light;
+                    position: relative;
+                    z-index: 10;
+
+                    .overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 100%;
+                        background-color: @primary-color;
+                        z-index: -1;
+                        transition: 1s;
+                    }
+
+                    &:hover .overlay {
+                        width: 100%;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                .info {
+                    position: absolute;
+                    top: 40%;
+                    background-color: #252A2E;
+                    padding: 20px;
+                    max-width: 350px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    ul {
+                        list-style: none;
+
+                        li {
+                            margin-bottom: 20px;
+
+                            i {
+                                color: @primary-color;
+                                display: inline-block;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
